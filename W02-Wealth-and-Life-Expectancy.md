@@ -13,12 +13,18 @@ output:
 ---
 
 
+## Background and Objective
+
+Hans Rosling is one of the most popular data scientists on the web. His original TED talk, [The best stats you’ve ever seen](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen) set a new bar for data visualization. I am going to create some graphics using his formatted data.
+
+## Skills Demonstrated
+
+During the Data Wrangling I filter the data to exclude the country Kuwait because it was corrupted data.
 
 
-
-
+## Setup
 ```r
-# This R-chunk imports all the datasets
+# This R-chunk imports all the datasets and libraries needed for the project
 
 library(gapminder)
 gap <- gapminder
@@ -26,9 +32,7 @@ library(dplyr)
 library(ggplot2)
 ```
 
-## Background
 
-Hans Rosling is one of the most popular data scientists on the web. His original TED talk, The best stats you’ve ever seen set a new bar for data visualization. I am going to create some graphics using his formatted data.
 
 ## Data Wrangling
 
