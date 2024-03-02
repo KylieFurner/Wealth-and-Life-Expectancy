@@ -19,7 +19,7 @@ output:
 
 
 ```r
-# Use this R-Chunk to import all your datasets!
+# This R-chunk imports all the datasets
 
 library(gapminder)
 gap <- gapminder
@@ -29,13 +29,13 @@ library(ggplot2)
 
 ## Background
 
-Hans Rosling is one of the most popular data scientists on the web. His original TED talk, The best stats you’ve ever seen set a new bar for data visualization. We are going to create some graphics using his formatted data as our weekly case study.
+Hans Rosling is one of the most popular data scientists on the web. His original TED talk, The best stats you’ve ever seen set a new bar for data visualization. I am going to create some graphics using his formatted data.
 
 ## Data Wrangling
 
 
 ```r
-# Use this R-Chunk to clean & wrangle your data!
+# This R-Chunk cleans & wrangles the data
 filteredCountries <- gap %>%
 filter(country != "Kuwait")
 ```
@@ -44,7 +44,7 @@ filter(country != "Kuwait")
 
 
 ```r
-# Use this R-Chunk to plot & visualize your data!
+# This R-Chunk plots & visualizes the data
 ggplot(data = filteredCountries, mapping = aes(x = lifeExp, y = gdpPercap, color = continent, size = pop/100000)) + geom_point() + facet_wrap(~year, ncol = 12) + labs(size = "Population", y = "GDP Per Capita", x = "Life Expectancy", color = "Continent") + scale_y_continuous(trans = "sqrt")
 ```
 
