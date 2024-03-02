@@ -47,7 +47,7 @@ filter(country != "Kuwait")
 ggplot(data = filteredCountries, mapping = aes(x = lifeExp, y = gdpPercap, color = continent, size = pop/100000)) + geom_point() + facet_wrap(~year, ncol = 12) + labs(size = "Population", y = "GDP Per Capita", x = "Life Expectancy", color = "Continent") + scale_y_continuous(trans = "sqrt")
 ```
 
-![](W02-Wealth-and-Life-Expectancy_files/figure-html/plot_data-1.png)<!-- -->
+![](plot_data-1.png)<!-- -->
 
 ## Conclusions
 
