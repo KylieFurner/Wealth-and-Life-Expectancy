@@ -15,11 +15,11 @@ output:
 
 ## Background and Objective
 
-Hans Rosling is one of the most popular data scientists on the web. His original TED talk, [The best stats you’ve ever seen](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen) set a new bar for data visualization. I am going to create some graphics using his formatted data.
+Hans Rosling is one of the most popular data scientists on the web. His original TED talk, [The best stats you’ve ever seen](https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen) set a new bar for data visualization.
 
-## Skills Demonstrated
-
-During the Data Wrangling I filter the data to exclude the country Kuwait because it was corrupted data.
+- Setup: I imported the libraries dyplyr and ggplot2 and the data gapminder as 'gap'.
+- Data Wrangling: I filtered the data to exclude the country Kuwait because it was corrupted data.
+- Data Visualization: I used color and scale to create a comprehensive plot that explores the relationship between GDP per capita (yaxis) and Life Expectancy(xaxis). The visualizations are sorted by every 4 years from 1952-2007. Each point represents a country from the data set. The size of each point shows the population of the country and the color shows what continent that country is in which is shown on the legend.
 
 
 ## Setup
@@ -53,7 +53,10 @@ ggplot(data = filteredCountries, mapping = aes(x = lifeExp, y = gdpPercap, color
 
 ![](plot_data-1.png)<!-- -->
 
-## Conclusions
+## Relationships Observed
 
-In this assignment I learned how to filter data by filtering out the country Kuwait from the data set. I also learned how to use colors and scale to further sort the data. 
+- GDP per capita and Life Expectancy: As a general rule as the GDP increases so does the Life Expectancy
+- Year, Life expectancy, and GDP per capita: As the years come closer to the present the GDP becomes more spread out. The lowest GDPs stay about the same but the difference between the highest GDP in 1952 and the highest GDP in 2007 is significant. Because the GDP has a visible positive relationship with the year and the life expectancy it is not a surprise the life expectancy also increases with the years.
+- Continent, GPD per capita, and life expectancy: Across the visualization European countries cluster at the top of both the GPD and life expectancy, while Africa sits at the bottom of both
+- Population, Continent, and Year: The populations increased as the years increased. The populations are also the highest in the Asian countries.
 
