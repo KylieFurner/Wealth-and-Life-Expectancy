@@ -1,7 +1,6 @@
 ---
 title: "Wealth and Life Expectancy"
 author: "Kylie Furner"
-date: "October 28, 2022"
 output:
   html_document:  
     keep_md: true
