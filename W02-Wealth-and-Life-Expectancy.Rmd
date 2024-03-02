@@ -1,7 +1,6 @@
 ---
 title: "Wealth and Life Expectancy"
 author: "Kylie Furner"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
     keep_md: true
